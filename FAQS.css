@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #5b92ea;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 60px;
+    background-color: #5b92ea(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    margin-right: 20%;
+}
+
+.logo img {
+    width: 60px;
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.faq-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.faq {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.faq-question {
+    cursor: pointer;
+    color: #0073e6;
+    margin: 0;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px 0;
+    color: #555;
+}
+
+.faq-answer.active {
+    display: block;
+}
+
+footer {
+    background: linear-gradient(135deg, #fca65f 0%, #ff7f50 100%);
+    color: #fff;
+    padding: 60px 0 30px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex-basis: 20%;
+    margin-bottom: 20px;
+}
+
+.footer-column h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer-column p, .footer-column ul, .footer-column a {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #f2f2f2;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: #f2f2f2;
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #00aaff;
+}
+
+.social-icons a {
+    font-size: 22px;
+    color: #fff;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #00aaff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    color: #f2f2f2;
+}

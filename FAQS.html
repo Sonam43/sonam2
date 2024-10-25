@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Page</title>
+    <link rel="stylesheet" href="FAQS.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="un logo.jpg" alt="un logo"></a>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Aboutus.html">About Us</a>
+            <a href="member.html">Members</a>
+            <a href="event.html">Events</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="FAQS.html">FAQs</a>
+        </nav>
+    </header>
+
+    <div class="faq-container">
+        <h1>Frequently Asked Questions</h1>
+        <div class="faq">
+            <h3 class="faq-question">What is Sherubtse United Nations Club?</h3>
+            <div class="faq-answer">
+                <p>The Sherubtse United Nations Club is a student organization focused on promoting UN values and activities within the college community.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <h3 class="faq-question">How can I join the club?</h3>
+            <div class="faq-answer">
+                <p>You can join the club by filling out a membership form and attending our meetings. More information is available on our website.</p>
+            </div>
+        </div>
+        <!-- Add more FAQs as needed -->
+    </div>
+    <script>
+        const questions = document.querySelectorAll('.faq-question');
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                question.nextElementSibling.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
